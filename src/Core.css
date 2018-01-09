@@ -1,0 +1,368 @@
+/*folio pages, need changes*/
+.folioItem{
+	height: 50vh;
+	display: block;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	transition: background .5s ease-in-out;
+	background-size: 100% 200%;
+}
+.folio1:hover {
+    background-position: 0 -100%;
+    background-color: #fff;
+}
+.folio1{
+	background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
+}
+.folio2:hover {
+    background-position: 0 -100%;
+    background-color: #666;
+}
+.folio2{
+	background-image: linear-gradient(to bottom, transparent 50%, #666 50%);
+}
+.folio3:hover {
+    background-position: 0 -100%;
+    background-color: #666;
+}
+.folio3{
+	background-image: linear-gradient(to bottom, transparent 50%, #666 50%);
+	/*background: #666;*/
+}
+.folio4:hover {
+    background-position: 0 -100%;
+    background-color: #fff;
+}
+.folio4{
+	background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
+	/*background: #fff;*/
+}
+
+/****************don't need restructuring*/
+
+/* portfolio page*/
+.viewFolioBtn{
+	margin: 0px auto;
+	padding: 5px;
+	background: #66ccff;
+	color: #19334d;
+	border: 4px solid #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+	font-size: 18px;
+	font-weight: 700;
+}
+.viewFolioBtn:hover{
+	transform: scale(1.2, 1.2);
+	background: #ff99cc;
+	color: #fff;
+}
+/*background for the title and description of image lightbox items*/
+.ril__toolbar, .ril__caption{
+    background-color: rgba(102,204,255, .7) !important;
+}
+/*description of image lightbox items*/
+.ril-caption-content{
+	color: #000 !important;
+}
+
+/*contact pages*/
+.contact-p a{
+	margin: 15px 30px;
+}
+.contact-p{
+}
+
+/*links*/
+a{
+	color: #66ccff;
+	transition: .3s all ease-in-out;
+}
+/*links for image lightbox items*/
+.ril__toolbarItem a{
+	color: #000;
+	text-decoration: underline;
+}
+.ril__toolbarItem a:hover{
+	color: #fff;
+}
+
+/*top row containing menu button, cube animation etc*/
+.top-row{
+background: #dddddd; /* Old browsers */
+background: -moz-linear-gradient(left, #dddddd 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #dddddd 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #dddddd 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	width: 100vw;
+	border-bottom: 6px solid #66ccff;
+}
+.buttom-content{
+	background: #fff;
+	width: 100vw;
+}
+
+/*Form input placeholder*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #19334d;
+	opacity: .5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #19334d;
+	opacity: .5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #19334d;
+	opacity: .5;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #19334d;
+	opacity: .5;
+}
+
+/* Window scrollbar */
+::-webkit-scrollbar{
+	background: #66ccff;
+}
+
+::-webkit-scrollbar-track{
+	background: #66ccff;
+	border-left: 2px solid #19334d;
+	border-right: 2px solid #19334d;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #ff99cc;
+	border: 2px solid #19334d;
+}
+
+/* Range input*/
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0px 0px 30px 0px;
+  width: 40%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 40%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+  background: #66ccff;
+  border-radius: 1.3px;
+  border: 0.2px solid #19334d;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+  border: 1px solid #19334d;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ff99cc;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #66ccff;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+  background: #66ccff;
+  border-radius: 1.3px;
+  border: 0.2px solid #19334d;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+  border: 1px solid #19334d;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ff99cc;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+input[type=range]::-ms-track {
+  width: 40%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #66ccff;
+  border: 0.2px solid #19334d;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #66ccff;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #19334d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #66ccff;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #66ccff;
+}
+
+/* The square and pseudo classes based cube */
+div.square{
+	transition: .3s all linear;
+	width: 30px;
+	height: 30px;
+	background: #66ccff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #66ccff 0%, #ff99cc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #66ccff 0%,#ff99cc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #66ccff 0%,#ff99cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ccff', endColorstr='#ff99cc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	transform: skewY(170deg);
+	animation: skewAnime infinite 3s ease-in-out;
+}
+/* An animation for div.square based on the change of skew values*/
+@keyframes skewAnime{
+	0% {transform: skewY(170deg);}
+	50% {transform: skewY(190deg);}
+	100% {transform: skewY(170deg);}
+}
+div.square::before{
+	content:'';
+	width: 30px;
+	height: 15px;
+	background: #66ccff; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #66ccff 0%, #ff99cc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #66ccff 0%,#ff99cc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #66ccff 0%,#ff99cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ccff', endColorstr='#ff99cc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	display: inline-block;
+	transform: skew(-45deg);
+	position: relative;
+	top: -17px;
+	left: 7px;
+}
+div.square::after{
+	content:'';
+	width: 15px;
+	height: 30px;
+	display: block;
+	background: #ff99cc;
+	transform: skewY(-45deg);
+	top: -32px;
+	left: 30px;	
+	position: relative;
+}
+div.square:hover{
+	background: #ff99cc; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ff99cc 0%, #66ccff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ff99cc 0%,#66ccff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ff99cc 0%,#66ccff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff99cc', endColorstr='#66ccff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+div.square:hover::before{
+	background: #ff99cc; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #ff99cc 0%, #66ccff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #ff99cc 0%,#66ccff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #ff99cc 0%,#66ccff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff99cc', endColorstr='#66ccff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+div.square:hover::after{
+	background: #66ccff;
+}
+
+
+
+/* Tooltip styling */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ff99cc;
+  color: #fff;
+  content: attr(data-tooltip);
+  font-family: Arial;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/*Font Awesome icons*/
+.fa{
+	font-size: 40px;
+}
+
+/* Responsive Styles for Smaller Screens*/
+@media (min-width: 768px) and (max-width: 1024px){
+	.pull-left{
+		width: 30%;
+	}
+	.pull-right{
+		width: 70%;
+	}
+}
+@media (max-width: 767px){
+	.pull-left, .pull-right{
+		width: 50%;
+	}
+}
