@@ -11,12 +11,12 @@ const images = [
 ];
 
 const titles = [
-  <a href="http://beyondarchitechniques.com.au/" target="_blank">Beyond Architechniques</a>,
-  <a href="https://bio-medanimalhealth.com/" target="_blank">Bio-Med Animal Health</a>,
-  <a href="https://bridesmaidforall.com.au/" target="_blank">Brides Maids</a>,
-  <a href="https://expresstiling.com.au/" target="_blank">Express Tiling And Stone Craft Pty Ltd</a>,
-  <a href="https://hydesqualitydrycleaners.com.au/" target="_blank">Hyde's Quality Dry Cleaners</a>,
-  <a href="http://yogachamps.com.au/" target="_blank">Yoga Champs</a>
+  <a href="http://beyondarchitechniques.com.au/" target="_blank" rel="noopener noreferrer">Beyond Architechniques</a>,
+  <a href="https://bio-medanimalhealth.com/" target="_blank" rel="noopener noreferrer">Bio-Med Animal Health</a>,
+  <a href="https://bridesmaidforall.com.au/" target="_blank" rel="noopener noreferrer">Brides Maids</a>,
+  <a href="https://expresstiling.com.au/" target="_blank" rel="noopener noreferrer">Express Tiling And Stone Craft Pty Ltd</a>,
+  <a href="https://hydesqualitydrycleaners.com.au/" target="_blank" rel="noopener noreferrer">Hyde's Quality Dry Cleaners</a>,
+  <a href="http://yogachamps.com.au/" target="_blank" rel="noopener noreferrer">Yoga Champs</a>
 ];
 
 const descs = [
