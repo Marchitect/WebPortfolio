@@ -20,7 +20,7 @@ class Core extends React.Component{
 			<div className="top-row">
 				<MenuContainer />
 				
-				<h1>May Wang, Web Developer</h1>
+				<h1>May, Web Developer</h1>
 				<NavLink exact to="/"><div className='square'></div></NavLink>
 			</div>
 				

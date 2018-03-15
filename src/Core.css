@@ -1,45 +1,80 @@
-/*folio pages, need changes*/
-.folioItem{
-	height: 50vh;
-	display: block;
-	float: left;
-	position: relative;
-	cursor: pointer;
-	transition: background .5s ease-in-out;
-	background-size: 100% 200%;
-}
-.folio1:hover {
-    background-position: 0 -100%;
-    background-color: #fff;
-}
-.folio1{
-	background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
-}
-.folio2:hover {
-    background-position: 0 -100%;
-    background-color: #666;
-}
-.folio2{
-	background-image: linear-gradient(to bottom, transparent 50%, #666 50%);
-}
-.folio3:hover {
-    background-position: 0 -100%;
-    background-color: #666;
-}
-.folio3{
-	background-image: linear-gradient(to bottom, transparent 50%, #666 50%);
-	/*background: #666;*/
-}
-.folio4:hover {
-    background-position: 0 -100%;
-    background-color: #fff;
-}
-.folio4{
-	background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
-	/*background: #fff;*/
-}
+
 
 /****************don't need restructuring*/
+
+/*homepage profile image*/
+section {
+  width: 20%;
+  margin: 0 auto;
+  line-height: 0;
+  position: relative;
+}
+section img {
+  width: 100%;
+  filter: grayscale(.3);
+}
+section article {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #66ccff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.95vw;
+  mix-blend-mode: lighten;
+}
+section div {
+  background: black;
+  height: 6vw;
+}
+section div{
+  grid-column: 1/1/1/1;
+  grid-row: 1/1/1/1;
+}
+section div:nth-of-type(10n), section div:nth-of-type(3){
+	background: #66ccff;
+}
+
+@media screen and (max-width: 768px){
+	section {
+	  width: 290px;
+	}
+	section article {
+		grid-gap: 14px;
+	}
+	section div {
+		height: 87px;
+	}
+}
+
+/*homepage buttons*/
+.homeButtonGroup{
+	display: flex;
+	justify-content: center;
+	margin: 15px auto;
+}
+.roundButton{
+	width: 20px;
+	height: 20px;
+	border-radius: 30px;
+	margin: 0px 5px;
+	cursor: pointer;
+	border: 0px;
+	transition: ease-in .2s all;
+}
+.roundButton:hover{
+	background: white !important;
+}
+
+.roundButton:nth-child(1){
+	background: pink;
+}
+.roundButton:nth-child(2){
+	background: Aquamarine;
+}
+.roundButton:nth-child(3){
+	background: CornflowerBlue ;
+}
 
 /* portfolio page*/
 .viewFolioBtn{
@@ -54,6 +89,7 @@
 	transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
 	font-size: 18px;
 	font-weight: 700;
+	font-family: 'Patua One';
 }
 .viewFolioBtn:hover{
 	transform: scale(1.2, 1.2);
@@ -139,6 +175,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', end
 	border: 2px solid #19334d;
 }
 
+/*skills section*/
+.halfWidth{
+	width: 50%;
+	float: left;
+}
 /* Range input*/
 input[type=range] {
   -webkit-appearance: none;
@@ -334,7 +375,7 @@ div.square:hover::after{
   content: attr(data-tooltip);
   font-family: Arial;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
 }
 

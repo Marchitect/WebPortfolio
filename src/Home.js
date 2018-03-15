@@ -1,42 +1,33 @@
 import React, { Component } from "react";
+
+import HomePageRoundButtons from './HomePageRoundButtons';
+import BoxPresenter from './BoxPresenter';
  
 class Home extends Component {
-  render() {
-    return (
-      <div className="container">
-        <h3>My Current Skills Spectrum</h3>
-        <h4>HTML & XML</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="10"/>
-        
-        <h4>CSS & Reprocessors</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="9"/>
 
-        <h4>JavaScript & React</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="7"/>
+    constructor(props){
+        super(props);
 
-        <h4>PHP</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="7"/>
+        this.state = {
+            content: "pic"
+        };
 
-        <h4>SQL</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="7"/>
+        this.changeContent = this.changeContent.bind(this);
+    }
 
-        <h4>WordPress</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="8"/>
+    changeContent(newStatus){
+        this.setState({content: newStatus});
+    }
 
-        <h4>Adobe Creative Suite</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="5"/>
+    render(){
+        return(
+        <div>
+            <HomePageRoundButtons onClick={this.changeContent} />
+            <BoxPresenter content={this.state.content} key={this.state.content}/>
+        </div>
+        );
+    }
 
-        <h4>Version Control</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="9"/>
-
-        <h4>SEO</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="5"/>
-
-        <h4>eCommerce</h4>
-        <input name="react" type="range" min="0" max="10" step="1" value="7"/>
-      </div>
-    );
-  }
 }
  
 export default Home;

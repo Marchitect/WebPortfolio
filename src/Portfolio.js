@@ -1,6 +1,5 @@
 import React, { Component } from "react";
  
-import ImageProducer from './ImageProducer';
 import LightBox from './LightBox';
 
 class Folio extends Component {
