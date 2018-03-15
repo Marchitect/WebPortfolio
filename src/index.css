@@ -3,8 +3,7 @@
 body {
 	margin: 0;
 	/*padding: 15px 0px;*/
-	/*font-family: sans-serif;*/
-	font-family: 'Patua One';
+	font-family: Arial;
 	background: #19334d;
 	color: #fff;
 	overflow-x: hidden;
@@ -31,6 +30,17 @@ h1{
 	top: 40px;
 	width: auto;
 }
+@media screen and (max-width: 768px){
+	h1{
+		font-size: 16px;
+	}
+	div.square{
+		top: 40px;
+	}
+	#collapseMenuBtn{
+		margin: 25px;
+	}
+}
 h2{
 	font-size: 18px;
 	font-weight: 300;
@@ -43,6 +53,7 @@ h3{
 h4{
 	font-size: 18px;
 	margin-bottom: 0px;
+	font-family: 'Patua One';
 }
 #logo{
 	width: 170px !important;

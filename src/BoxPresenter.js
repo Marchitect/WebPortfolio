@@ -73,6 +73,8 @@ class BoxPresenter extends React.Component {
       <div className="container">
         <h3>My Experience</h3>
         <h4>Web Developer, Sites n Stores, 1 year 1 month</h4>
+        <p>I delivered Content Management (mainly WordPress) and eCommerce solutions to small and medium business owners in an agile development environment.</p>
+        
       </div>
     }
 
